@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #96deff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #cd1c18;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:#9b1313;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5076ff;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.filter-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.filter-btn.active {
+    background-color: #5bfffa;
+    color: white;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.todo-item.completed {
+    opacity: 0.7;
+    background-color: #f0f0f0;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+}
+
+.todo-content {
+    flex: 1;
+}
+
+.todo-text {
+    margin-bottom: 5px;
+}
+
+.todo-category {
+    font-size: 12px;
+    color: #666;
+}
+
+.todo-priority {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.priority-high {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.priority-medium {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.priority-low {
+    background-color: #e8f5e9;
+    color: #9b1313;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.todo-actions button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.edit-btn {
+    background-color: #38000a;
+}
+
+.edit-btn:hover {
+    background-color: #38000a;
+} 
